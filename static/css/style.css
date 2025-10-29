@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#cuerpo{
+    background-color: #00203e;
+}
+
+/*Encabezado-------------------------------------------------------------------*/
+.cabeza{
+    background-color: black;
+    position: fixed; /*se mantiene en el mismo lugar no importa que*/
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+}
+
+#links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.transportador{
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+    font-size: 30px;
+    font-family: "Neonderthaw", cursive;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.rojo:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #ff003c,
+                0px 0px 10px #ff003c,
+                0px 0px 15px #ff003c,
+                0px 0px 20px #ff003c;
+}
+
+.naranjo:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #ff6600,
+                0px 0px 10px #ff6600,
+                0px 0px 15px #ff6600,
+                0px 0px 20px #ff6600;
+}
+.amarillo:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #00ff2f,
+                0px 0px 10px #00ff2f,
+                0px 0px 15px #00ff2f,
+                0px 0px 20px #00ff2f;
+}
+
+.azul:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #0084ff,
+                0px 0px 10px #0084ff,
+                0px 0px 15px #0084ff,
+                0px 0px 20px #0084ff;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px dashed rgb(226, 226, 226);
+    border-radius: 50%;
+    pointer-events: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px;
+}
+
+.planet {
+    width: 20px;
+    height: 20px;
+    background-color: #33f;
+    border-radius: 50%;
+    margin: 0px;
+    position: relative;
+    transform: translate(10px);
+}
+
+.planet.mars { 
+    background-color: white; 
+    box-shadow: 0px 0px 5px #ff003c,
+                0px 0px 10px #ff003c,
+                0px 0px 15px #ff003c,
+                0px 0px 20px #ff003c;
+}
+.planet.earth { 
+    background-color: white; 
+    box-shadow: 0px 0px 5px #0084ff,
+                0px 0px 10px #0084ff,
+                0px 0px 15px #0084ff,
+                0px 0px 20px #0084ff;
+}
+.planet.jupiter { 
+    background-color: white; 
+    width: 30px; 
+    height: 30px; 
+    transform: translate(15px);
+    box-shadow: 0px 0px 5px #ff6600,
+                0px 0px 10px #ff6600,
+                0px 0px 15px #ff6600,
+                0px 0px 20px #ff6600;
+}
+
+/*Encabezado-------------------------------------------------------------------*/
+/*Cuerpo-------------------------------------------------------------------*/
+.inicio{
+    background: radial-gradient(at bottom, #017fa5, #003342);
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: center;
+    padding: 20px;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.foto:hover{
+    scale: 1.1;
+}
+
+.container-me{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-text{
+    flex: 2;
+    color: white;
+    transition: 0.2s;
+}
+
+.container-text:hover{
+    text-shadow: 0px 0px 5px #0084ff,
+                0px 0px 10px #0084ff,
+                0px 0px 15px #0084ff,
+                0px 0px 20px #0084ff;
+}
+/*Proyectos*/
+
+.logo {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 25%;
+    box-shadow: 0px 0px 10px #ff003c;
+    position: relative;
+}
+.logo:hover{
+    box-shadow: 0px 0px 10px #ff003c,
+                0px 0px 15px #ff003c,
+                0px 0px 20px #ff003c,
+                0px 0px 25px #ff003c;
+}
+#proyectos{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background: radial-gradient(at top,#014155, #000f1d);
+}
+.containerL {
+    flex: 1;
+    color: white;
+    transition: 0.3s;
+}
+
+.containerL:hover{
+    text-shadow: 0px 0px 10px #ff003c,
+                0px 0px 15px #ff003c,
+                0px 0px 20px #ff003c,
+                0px 0px 25px #ff003c;
+}
+
+.containerR {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*estilo de prueba*/
+.snow {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ff003c,
+                0px 0px 15px #ff003c,
+                0px 0px 20px #ff003c,
+                0px 0px 25px #ff003c;
+}
+
+/*Habilidades*/
+.titulo{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+.titulo:hover{
+    text-shadow: 0px 0px 10px #ff6600,
+                0px 0px 15px #ff6600,
+                0px 0px 20px #ff6600,
+                0px 0px 25px #ff6600;
+}
+
+.containerh{
+    background-color: #000f1d;
+    text-align: center;
+    padding: 20px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.derecha, .izquierda {
+    flex: 1;
+    padding: 20px;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+}
+
+.progreso {
+    height: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.html {
+    flex: 6;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ff6600,
+                0px 0px 15px #ff6600,
+                0px 0px 20px #ff6600,
+                0px 0px 25px #ff6600;
+}
+
+.css {
+    flex: 6;
+    height: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #0084ff,
+                0px 0px 15px #0084ff,
+                0px 0px 20px #0084ff,
+                0px 0px 25px #0084ff;
+}
+
+.mysql {
+    flex: 6;
+    height: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ff003c,
+                0px 0px 15px #ff003c,
+                0px 0px 20px #ff003c,
+                0px 0px 25px #ff003c;
+}
+
+.js {
+    flex: 3;
+    height: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #00ff2f,
+                0px 0px 15px #00ff2f,
+                0px 0px 20px #00ff2f,
+                0px 0px 25px #00ff2f;
+}
+
+.python {
+    flex: 1;
+    height: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #0084ff,
+                0px 0px 15px #0084ff,
+                0px 0px 20px #0084ff,
+                0px 0px 25px #0084ff;
+}
+
+.faltante {
+    flex: 4;
+    height: 10px;
+    background-color: grey;
+    border-radius: 0 10px 10px 0;
+}
+/*Cuerpo-------------------------------------------------------------------*/
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.info-contacto {
+    display: flex;
+    justify-content: space-evenly;
+}
